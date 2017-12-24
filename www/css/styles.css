@@ -1,0 +1,78 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.statusbar-overlay {
+  background: #000000;
+}
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.columnas {
+  margin-left: 15%;
+	max-width: 70%;
+	vertical-align: middle;
+	text-align: center;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2;/* Firefox */
+  column-count: 2;
+}
+
+#rcorners1 {
+    border-radius: 15px;
+    background: rgba(255,255,255,0.6);
+}
+
+.input {
+  text-align: center;
+  box-sizing: border-box;
+  color:#0000FF;
+  width: 100%;
+  border: 0.15em solid rgba(255,255,255,0.7);
+  border-radius: 0.5em;
+}
+
+.input2 {
+  border: 2px;
+  border-radius: 25px;
+  color:#fff;
+  background-color: rgba(0,128,255,0.7);
+  border-radius: 0.5em;
+}
+
+.input3 {
+  border-radius: 15px;
+  color:#0000FF;
+  background-color: rgba(255,255,255,0.7);
+  border: 0.15em solid rgba(148,194,241,0.6);
+  border-radius: 0.5em;
+}
+
+::-webkit-input-placeholder {
+   color: #0000FF;;
+   text-align: center;
+
+}
+
+:-moz-placeholder {
+   color: #0000FF;
+   text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
