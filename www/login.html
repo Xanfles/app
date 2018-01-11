@@ -10,7 +10,23 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
             -->
-            <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'unsafe-inline'; media-src *">
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self'
+            'unsafe-eval'
+            'unsafe-inline'
+            ourdomain:*
+            data:
+            http://ws.masmargen.cl/login.php
+            .ourdomain.com
+            ams.ourdomain.com
+            cdn.mxpnl.com
+            candle.ourdomain.com
+            billing-pci.ourdomain.com
+            ourdomain-cdn.ourdomainstatic.com
+            file:
+            *
+            gap://ready
+            wss://*
+            ws://* data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'unsafe-inline'; media-src *">
 
 
 
