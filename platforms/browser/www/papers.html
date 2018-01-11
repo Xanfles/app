@@ -11,7 +11,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
             -->
-            <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';">
+            <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval';">
 
 
 
@@ -22,7 +22,6 @@
             <meta name="apple-mobile-web-app-status-bar-style" content="black">
             <meta name="format-detection" content="telephone=no">
             <meta name="msapplication-tap-highlight" content="no">
-            <meta http-equiv="Content-Security-Policy" content="default-src * gap: ws: https://ssl.gstatic.com;style-src * 'unsafe-inline' 'self' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;img-src * data: 'unsafe-inline' 'self' content:;fmedia-src mediastream;">
 
             <!-- Your app title -->
             <title>OIRL-APP</title>
@@ -65,7 +64,7 @@
                                 <h3 style="color: #000 ; text-align: center"><b>Revista SOCHIORL</b></h3>
                                 <p style="color: #000 ; text-align: center"><b>Publicación: 6 de feb 2017</b></p>
                                 <p style="color: #000; text-align: center"><b>SOCHIORL</b></p>
-                                <a target="_blank" data-rel="external" onclick="window.open('http://www.google.cl', '_system');" style="margin-bottom: 2em;">
+                                <a target="_blank" data-rel="external" onclick="window.open('http://www.sochiorl.cl/uploads/77-12-01.pdf', '_system');" style="margin-bottom: 2em;">
                                     <center>
                                         <input class="input2" type="button" value="Descargar" style="height:30px;margin-bottom: 2em;border-radius: 20px;background-color: rgba(255,37,0,0.8)"/>
                                     </center>
