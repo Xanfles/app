@@ -35,7 +35,6 @@
 }
 #rcorners1 {
     border-radius: 15px;
-    background: rgba(255,255,255,0.6);
 }
 
 .input {
@@ -79,4 +78,49 @@ a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
+}
+
+.divTable{
+  display: table;
+  width: 100%;
+}
+.divTableRow {
+  display: table-row;
+}
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+}
+.divTableCell{
+  background-color: rgba(255,255,255,0.6);
+  width: 20%;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(0,124,255);
+}
+.divTableCell2{
+  background-color: rgba(255,255,255,0.9);
+  width: 20%;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(0,124,255);
+}
+.divTableCell, .divTableHead,.divTableCell2 {
+  border: 1px solid #999999;
+  display: table-cell;
+  padding: 10px 10px;
+  border: 0.05em solid rgba(0,0,0,0.6);
+}
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+  font-weight: bold;
+}
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
 }
