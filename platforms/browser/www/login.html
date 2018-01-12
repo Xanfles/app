@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+
+    <!--
+    	* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    	* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    	* Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
         * Enable inline JS: add 'unsafe-inline' to default-src
         * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
--->
-<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    
-<!-- Your app title -->
-<title>OIRL-APP</title>
-
-    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
-        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+        * Create your own at http://cspisawesome.com
     -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Your app title -->
+    <title>OIRL-APP</title>
 
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
@@ -36,58 +31,58 @@
 </head>
 
 <body>
-    <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-    <!-- Views -->
-    <div class="views">
-        <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
-            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <div class="pages navbar-through toolbar-through">
-                <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
-                    <!-- Scrollable page content -->
-                    <div class="page-content" style="background-image:url(images/fondo.jpg)">
-                        <div class="content-block">
-                            <center>
-                                <img src="images/orlLogo_blanco.png" style="max-width: 70%;">
-                            </center>
-                        </div>
-                        <div style="text-align: center">
-                            <form id="loginform" action="javascript:void(0)" method="post" accept-charset="utf-8">
-                                <section style="padding: 8px">
-                                    <input class="input rcorners1"  type="text" name="usuario" id="txtUsuario" class="text-input"  placeholder="RUN 8.201.24-4" style="color: #0000FF;display: block; width: 100%; height: 70px">
-                                </section>
+	<!-- Status bar overlay for full screen mode (PhoneGap) -->
+	<div class="statusbar-overlay"></div>
+	<!-- Views -->
+	<div class="views">
+		<!-- Your main view, should have "view-main" class -->
+		<div class="view view-main">
+			<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+			<div class="pages navbar-through toolbar-through">
+				<!-- Page, "data-page" contains page name -->
+				<div data-page="index" class="page">
+					<!-- Scrollable page content -->
+					<div class="page-content" style="background-image:url(images/fondo.jpg)">
+						<div class="content-block">
+							<center>
+								<img src="images/orlLogo_blanco.png" style="max-width: 70%;">
+							</center>
+						</div>
+						<div style="text-align: center">
+							<form id="loginform" action="javascript:void(0)" method="post" accept-charset="utf-8">
+								<section style="padding: 8px">
+									<input class="input rcorners1"  type="text" name="usuario" id="txtUsuario" class="text-input"  placeholder="RUN 8.201.24-4" style="color: #0000FF;display: block; width: 100%; height: 70px">
+								</section>
 
-                                <section style="padding: 0 8px 8px">
-                                    <input class="input rcorners1"  name="clave" id="txtClave" type="password" class="text-input" placeholder="CONTRASEÑA" style="color: #0000FF; display: block; width: 100%;height: 70px">
-                                </section>
-                                <section style="padding: 0 30px 30px; margin-top: 1rem">
-                                    <a href="main.html"><input class="input" id="rcorners1"  value="Ingresar" name="login" value="Login" style="height: 40px;" /></a>                                 
-                                </section>                               
-                                <section style="padding: 0 8px 8px; margin-top: 1rem">
-                                    <a href="forgetPass.html">¿Olvidó su contraseña?</a>
-                                </section>
-                                <section style="padding: 0 70px 70px; margin-top: 1rem">
-                                    <a href="newAccount.html">
-                                        <input class="input" id="rcorners1" type="button" value="CREA UNA CUENTA" style="color: #0000FF; height:40px" />
-                                    </a>
-                                </section>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="js/toastr.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script src="lib/login.js"></script>
+								<section style="padding: 0 8px 8px">
+									<input class="input rcorners1"  name="clave" id="txtClave" type="password" class="text-input" placeholder="CONTRASEÑA" style="color: #0000FF; display: block; width: 100%;height: 70px">
+								</section>
+								<section style="padding: 0 30px 30px; margin-top: 1rem">
+									<a href="main.html"><input class="input" id="rcorners1"  value="Ingresar" type="button" name="login" value="Login" style="height: 40px;" /></a>                                
+								</section>                               
+								<section style="padding: 0 8px 8px; margin-top: 1rem">
+									<a href="forgetPass.html">¿Olvidó su contraseña?</a>
+								</section>
+								<section style="padding: 0 70px 70px; margin-top: 1rem">
+									<a href="newAccount.html">
+										<input class="input" id="rcorners1" type="button" value="CREA UNA CUENTA" style="color: #0000FF; height:40px" />
+									</a>
+								</section>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+	<script type="text/javascript" src="js/my-app.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="js/toastr.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="lib/login.js"></script>
 </body>
 
 </html>
