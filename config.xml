@@ -8,6 +8,7 @@
 		PhoneGap Team
 	</author>
 	<content src="index.html" />
+	<plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist" source="git" />
 	<preference name="orientation" value="portrait" />
 	<allow-navigation href="*" />
     <allow-intent href="*" />

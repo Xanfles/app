@@ -1,8 +1,8 @@
-                        </section>
-                        <!DOCTYPE html>
-                        <html>
-                        <head>
-    <!--
+                       
+<!DOCTYPE html>
+<html>
+<head>
+                            <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -11,9 +11,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
             -->
-            <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval';">
-
-
+            <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;">
 
             <!-- Required meta tags-->
             <meta charset="utf-8">
@@ -22,7 +20,7 @@
             <meta name="apple-mobile-web-app-status-bar-style" content="black">
             <meta name="format-detection" content="telephone=no">
             <meta name="msapplication-tap-highlight" content="no">
-
+            <meta http-equiv="refresh" content="3;login.html" />
             <!-- Your app title -->
             <title>OIRL-APP</title>
 
