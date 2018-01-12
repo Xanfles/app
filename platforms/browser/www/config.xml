@@ -7,9 +7,12 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
 	</author>
-    <content src="index.html" />
+    <content src="index.html"/>
+    
+    <preference name="orientation" value="portrait" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
-    <preference name="orientation" value="portrait" />
+    <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser" source="git" />
 </widget>

@@ -14,4 +14,6 @@
     <allow-intent href="*" />
     <access origin="*" />
     <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser" source="git" />
+    
 </widget>
