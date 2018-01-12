@@ -35,13 +35,13 @@ function sendData(){
           //alert(data);
           data = jQuery.parseJSON(data);
           if(data[0].status == 'ok'){
-          	alert("cambiando");
+          	alert("Bienvenido");
             toastr.success(data[0].message);
             setTimeout(function(){
               window.location.replace("main.html");
-            }, 3000);
+            }, 1000);
           }else if (data[0].status == 'fail'){
-          	alert("no existe");
+          	alert("Usuario o contraseña invalidos");
             toastr.error(data[0].message);
           }
         },

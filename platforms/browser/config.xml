@@ -9,6 +9,8 @@
 	</author>
     <content src="index.html" />
     <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
     <allow-intent href="http://*/*" launch-external="yes" />
     <allow-intent href="https://*/*" launch-external="yes" />
     <allow-intent href="http://*/*" />
