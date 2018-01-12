@@ -25,7 +25,6 @@ function sendData(){
     },
     submitHandler: function(form) {
       dataString = "user="+$('#txtUsuario').val()+"&pass="+$('#txtClave').val();
-      alert (dataString);
       //alert(dataString);
       $.ajax({
         url: "http://ws.masmargen.cl/login.php",
@@ -34,13 +33,12 @@ function sendData(){
         success: function(data){
           //alert(data);
           data = jQuery.parseJSON(data);
-          if(data[0].status == 'ok'){
-          	alert("Bienvenido");
-            toastr.success(data[0].message);
+          if(data == '1'){
+          	window.plugins.toast.showShortTop('Bienvenido Doctor', function(a){console.log('toast success: ' + a)});
             setTimeout(function(){
               window.location.replace("main.html");
             }, 1000);
-          }else if (data[0].status == 'fail'){
+          }else if (data == ''){
           	alert("Usuario o contraseña invalidos");
             toastr.error(data[0].message);
           }

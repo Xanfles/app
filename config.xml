@@ -17,5 +17,9 @@
 
 	<plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
 
+	<plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin" source="git"/>
+
+	<!-- Ejemplo para instalar plugin desde github <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin" source="git"/>-->
+
 	
 </widget>
