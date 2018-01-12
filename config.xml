@@ -10,6 +10,9 @@
 	<content src="index.html" />
 
 	<access origin="*" />
+	<access origin="http://www.sochiorl.cl/solicita.php" />
+	<access origin="http://sochiorl.foroactivo.com/login" />
+	<allow-intent href="http://*/*" launch-external="yes"/>
 	<allow-intent href="http://*/*" launch-external="yes"/>
 	<allow-intent href="https://*/*" launch-external="yes"/>
 	<allow-intent href="tel:*" />
