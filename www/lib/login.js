@@ -34,12 +34,12 @@ function sendData(){
           //alert(data);
           data = jQuery.parseJSON(data);
           if(data == '1'){
-          	window.plugins.toast.showShortTop('Bienvenido Doctor', function(a){console.log('toast success: ' + a)});
+          	window.plugins.toast.showShortCenter('Bienvenido Doctor', function(a){console.log('toast success: ' + a)});
             setTimeout(function(){
               window.location.replace("main.html");
-            }, 1000);
+            }, 2000);
           }else if (data == ''){
-          	alert("Usuario o contraseña invalidos");
+          	window.plugins.toast.showShortCenter('Contraseña o Usuario Invalidos', function(a){console.log('toast error: ' + a)});
             toastr.error(data[0].message);
           }
         },

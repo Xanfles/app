@@ -1,25 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.masmargen.cl" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.masmargen.cl" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ORLFINAL</name>
     <description>
-        A blank PhoneGap app.
-    </description>
+		A blank PhoneGap app.
+	</description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
-    </author>
-    <content src="index.html"/>
-    
-    <preference name="orientation" value="portrait" />
+		PhoneGap Team
+	</author>
+    <content src="index.html" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
-    <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
-
-    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
-
-    <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin" source="git"/>
-
-    <!-- Ejemplo para instalar plugin desde github <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin" source="git"/>-->
-
-    
+    <preference name="orientation" value="portrait" />
 </widget>
