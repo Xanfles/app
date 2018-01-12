@@ -21,4 +21,5 @@
     <allow-navigation href="http://sochiorl.foroactivo.com/login" launch-external="yes" />
     <allow-intent href="http://www.sochiorl.cl/solicita.php" launch-external="yes" />
     <allow-intent href="http://sochiorl.foroactivo.com/login" launch-external="yes" />
+    <preference name="orientation" value="landscape" />
 </widget>

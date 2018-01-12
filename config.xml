@@ -8,7 +8,7 @@
 		PhoneGap Team
 	</author>
 	<content src="index.html" />
-
+	<preference name="orientation" value="landscape" />
 	<access origin="*" launch-external="yes"/>
 	<access origin="http://www.sochiorl.cl/solicita.php" launch-external="yes"/>
 	<access origin="http://sochiorl.foroactivo.com/login" launch-external="yes"/>
