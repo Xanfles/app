@@ -8,12 +8,8 @@
 		PhoneGap Team
 	</author>
     <content src="index.html" />
-    <access origin="10.0.0.2" />
-    <allow-intent href="http://*/*" launch-external="yes" />
-    <allow-intent href="https://*/*" launch-external="yes" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <access origin="*" />
     <preference name="orientation" value="portrait" />
 </widget>
