@@ -9,9 +9,9 @@
 	</author>
 	<content src="index.html" />
 
-	<access origin="*" />
-	<access origin="http://www.sochiorl.cl/solicita.php" />
-	<access origin="http://sochiorl.foroactivo.com/login" />
+	<access origin="*" launch-external="yes"/>
+	<access origin="http://www.sochiorl.cl/solicita.php" launch-external="yes"/>
+	<access origin="http://sochiorl.foroactivo.com/login" launch-external="yes"/>
 	<allow-intent href="http://*/*" launch-external="yes"/>
 	<allow-intent href="http://*/*" launch-external="yes"/>
 	<allow-intent href="https://*/*" launch-external="yes"/>
