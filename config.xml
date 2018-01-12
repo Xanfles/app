@@ -11,9 +11,11 @@
 	
 	<preference name="orientation" value="portrait" />
 	<allow-navigation href="*" />
-    <allow-intent href="*" />
-    <access origin="*" />
-    <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist" source="git" />
-    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser" source="git" />
-    
+	<allow-intent href="*" />
+	<access origin="*" />
+	<plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
+
+	<plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
+
+	
 </widget>
