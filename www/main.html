@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!--
+    <head>
+        <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -10,82 +10,120 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
             -->
-            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-
-
-
+        <!--- Debug CSP -->
+        <meta content="default-src 'self' data: gap: https://ssl.gstatic.com; script-src 'self' * 'unsafe-inline'; img-src * data:; connect-src *; style-src 'self' 'unsafe-inline';" http-equiv="Content-Security-Policy">
+            <!--- Production CSP
+ <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * data:; connect-src *; style-src 'self' 'unsafe-inline';">
+ -->
             <!-- Required meta tags-->
             <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-            <meta name="apple-mobile-web-app-capable" content="yes">
-            <meta name="apple-mobile-web-app-status-bar-style" content="black">
-            <meta name="format-detection" content="telephone=no">
-            <meta name="msapplication-tap-highlight" content="no">
-
-            <!-- Your app title -->
-            <title>OIRL-APP</title>
-
-    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+                <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" name="viewport">
+                    <meta content="yes" name="apple-mobile-web-app-capable">
+                        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+                            <meta content="telephone=no" name="format-detection">
+                                <meta content="no" name="msapplication-tap-highlight">
+                                    <!-- Your app title -->
+                                    <title>
+                                        OIRL-APP
+                                    </title>
+                                    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
     -->
-
-    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
-    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-    <!-- Views -->
-    <div class="views">
-        <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
-            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <div class="pages navbar-through toolbar-through">
-                <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
-                    <!-- Scrollable page content -->
-                    <div class="page-content" style="background-image:url(images/fondo2.jpg)">
-                        <div class="content-block">
-                            <center>
-                                <img src="images/orlLogo.png" style="max-width: 70%; margin-top: -3rem">
-                            </center>
-                        </div>
-
-                        <div class="columnas centered" style="margin-top: -1rem">
-                            <!--rem    revisar para medida para proporción-->
-                            <a href="countryCongress.html" style="color:#00007F"><img src="images/congresos.png" style="max-width: 90px;">Congresos</a>
-                            <a href="formacion.html" style="color:#00007F"><img src="images/centros.png" style="max-width: 90px;">Formación</a>
-                        </div>
-                        <div class="columnas centered" style="margin-top: 2rem">
-                            <!--rem    revisar para medida para proporción-->
-                            <a href="papers.html" style="color:#00007F"><img src="images/revista.png" style="max-width: 100px;">Revista</a>
-                            <a href="noticias.html" style="color:#00007F"><img src="images/noticias.png" style="max-width: 85px;margin-top: 1.5em;">Noticias</a>
-                        </div>
-                        <div class="columnas centered" style="margin-top: 2rem">
-                            <!--rem    revisar para medida para proporción-->
-                            <a data-rel="external" onclick="window.open('http://www.sochiorl.cl/solicita.php', '_system');" style="color:#00007F"><img src="images/teacher.png" style="max-width: 90px;">Cursos</a>
-                            <a data-rel="external" onclick="window.open('http://sochiorl.foroactivo.com/login', '_system');" style="color:#00007F"><img src="images/foro.png" style="max-width: 90px;"><br>Foro</a>
-                        </div>
-                        <section style="padding: 0 70px 9px; margin-top: 1em;">
-                            <center>
-                                <a href="login.html">
-                                    <input class="input" id="rcorners1" type="button" value="Salir" style="color: #fff; height:40px;background-color: rgba(255,37,0,0.8);width: 70px;" />
+                                    <link href="lib/framework7/css/framework7.ios.min.css" rel="stylesheet">
+                                        <link href="lib/framework7/css/framework7.ios.colors.min.css" rel="stylesheet">
+                                            <!--Font Awesome-->
+                                            <link href="path/to/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+                                                <link href="css/styles.css" rel="stylesheet">
+                                                </link>
+                                            </link>
+                                        </link>
+                                    </link>
+                                </meta>
+                            </meta>
+                        </meta>
+                    </meta>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <!-- Status bar overlay for full screen mode (PhoneGap) -->
+        <div class="statusbar-overlay">
+        </div>
+        <!-- Views -->
+        <div class="views">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+                <div class="pages navbar-through toolbar-through">
+                    <!-- Page, "data-page" contains page name -->
+                    <div class="page" data-page="index">
+                        <!-- Scrollable page content -->
+                        <div class="page-content" style="background-image:url(images/fondo2.jpg)">
+                            <div class="content-block">
+                                <center>
+                                    <img src="images/orlLogo.png" style="max-width: 70%; margin-top: -3rem">
+                                    </img>
+                                </center>
+                            </div>
+                            <div class="columnas centered" style="margin-top: -1rem">
+                                <!--rem    revisar para medida para proporción-->
+                                <a href="countryCongress.html" style="color:#00007F">
+                                    <img src="images/congresos.png" style="max-width: 90px;">
+                                        Congresos
+                                    </img>
                                 </a>
-                            </center>
-                        </section>
+                                <a href="formacion.html" style="color:#00007F">
+                                    <img src="images/centros.png" style="max-width: 90px;">
+                                        Formación
+                                    </img>
+                                </a>
+                            </div>
+                            <div class="columnas centered" style="margin-top: 2rem">
+                                <!--rem    revisar para medida para proporción-->
+                                <a href="papers.html" style="color:#00007F">
+                                    <img src="images/revista.png" style="max-width: 100px;">
+                                        Revista
+                                    </img>
+                                </a>
+                                <a href="noticias.html" style="color:#00007F">
+                                    <img src="images/noticias.png" style="max-width: 85px;margin-top: 1.5em;">
+                                        Noticias
+                                    </img>
+                                </a>
+                            </div>
+                            <div class="columnas centered" style="margin-top: 2rem">
+                                <!--rem    revisar para medida para proporción-->
+                                <a data-rel="external" onclick="window.open('http://www.sochiorl.cl/solicita.php', '_system');" style="color:#00007F">
+                                    <img src="images/teacher.png" style="max-width: 90px;">
+                                        Cursos
+                                    </img>
+                                </a>
+                                <a data-rel="external" onclick="window.open('http://sochiorl.foroactivo.com/login', '_system');" style="color:#00007F">
+                                    <img src="images/foro.png" style="max-width: 90px;">
+                                        <br>
+                                            Foro
+                                        </br>
+                                    </img>
+                                </a>
+                            </div>
+                            <section style="padding: 0 70px 9px; margin-top: 1em;">
+                                <center>
+                                    <a href="login.html">
+                                        <input class="input" id="rcorners1" style="color: #fff; height:40px;background-color: rgba(255,37,0,0.8);width: 70px;" type="button" value="Salir"/>
+                                    </a>
+                                </center>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-</body>
-
+        <script src="cordova.js" type="text/javascript">
+        </script>
+        <script src="lib/framework7/js/framework7.min.js" type="text/javascript">
+        </script>
+        <script src="js/my-app.js" type="text/javascript">
+        </script>
+    </body>
 </html>
