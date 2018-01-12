@@ -9,9 +9,10 @@
 	</author>
 	<content src="index.html" />
 	<preference name="orientation" value="landscape" />
-	<access origin="*" launch-external="yes"/>
-	<access origin="http://www.sochiorl.cl/solicita.php" launch-external="yes"/>
-	<access origin="http://sochiorl.foroactivo.com/login" launch-external="yes"/>
+	<access origin="10.0.0.2"/> 
+	<access origin="*"/>
+	<access origin="http://www.sochiorl.cl/solicita.php"/>
+	<access origin="http://sochiorl.foroactivo.com/login"/>
 	<allow-intent href="http://*/*" launch-external="yes"/>
 	<allow-intent href="http://*/*" launch-external="yes"/>
 	<allow-intent href="https://*/*" launch-external="yes"/>
