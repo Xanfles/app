@@ -7,11 +7,7 @@
 	<author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
 	</author>
-	<content src="index.html"/>
-	<config-file platform="android" parent="/manifest" mode="merge">
-		<application android:debuggable="false"/>
-	</config-file>
-	
+	<content src="index.html"/>	
 	<preference name="orientation" value="portrait" />
 	<allow-navigation href="*" />
 	<allow-intent href="*" />
