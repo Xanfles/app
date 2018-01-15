@@ -87,6 +87,8 @@ function sendData(){
 				      toastr.error(data);
 				    }
   				});
+  			}else{
+  				window.plugins.toast.showShortCenter('Las contraseñas deben ser iguales', function(a){console.log('toast error: ' + a)});
   			}
 		}
 	});
