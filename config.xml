@@ -7,6 +7,11 @@
 	<author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
 	</author>
+	<icon src="res/icon.png" />
+
+	<gap:splash src="res/icon/ios/splash_3_ios.png"         gap:platform="ios"     width="320" height="480" />
+	<gap:splash src="res/icon/ios/splash_2_ios.png"      gap:platform="ios"     width="640" height="960" />
+	<gap:splash src="res/icon/ios/splash_1_ios.png" gap:platform="ios" width="640" height="1136" />
 	<preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
 	<preference name="auto-hide-splash-screen" value="true" /> 
 	<content src="index.html"/>	
@@ -22,17 +27,6 @@
 
 
 	<!-- Ejemplo para instalar plugin desde github <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin" source="git"/>-->
-
-	<icon src="res/icon.png" />
-
-	<gap:icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
-	<gap:icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
-	<gap:icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
-	<gap:icon src="res/icon/ios/icon-72-2x.png" 		gap:platform="ios" width="144" height="144" />
-
-	<gap:splash src="res/icon/ios/splash_3_ios.png"         gap:platform="ios"     width="320" height="480" />
-	<gap:splash src="res/icon/ios/splash_2_ios.png"      gap:platform="ios"     width="640" height="960" />
-	<gap:splash src="res/icon/ios/splash_1_ios.png" gap:platform="ios" width="640" height="1136" />
 
 	
 </widget>
