@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.masmargen.cl" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>ORLFINAL</name>
+    <name>SochiORL</name>
     <description>
-		A blank PhoneGap app.
+		SochiORL app.
 	</description>
     <author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
@@ -11,5 +11,14 @@
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
+    <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+    <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+    <icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
+    <icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+    <gap:splash gap:platform="ios" height="480" src="res/icon/ios/splash_3_ios.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/icon/ios/splash_2_ios.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="res/icon/ios/splash_1_ios.png" width="640" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
     <preference name="orientation" value="portrait" />
 </widget>
