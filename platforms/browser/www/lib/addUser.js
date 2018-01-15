@@ -54,6 +54,7 @@ function sendData(){
 			}
 		},
 		submitHandler: function(form) {
+			window.plugins.toast.showShortCenter('Holi', function(a){console.log('toast error: ' + a)});
 			compare1 = $('#txtPass').val();
 			compare2 = $('#txtRpass').val();
 			if (compare1 === compare2) {
