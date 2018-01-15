@@ -12,6 +12,13 @@
     <allow-intent href="*" />
     <access origin="*" />
     <icon src="res/icon.png" />
+    <gap:icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+    <gap:icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+    <gap:icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
+    <gap:icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+    <gap:splash gap:platform="ios" height="480" src="res/icon/ios/splash_3_ios.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="res/icon/ios/splash_2_ios.png" width="640" />
+    <gap:splash gap:platform="ios" height="1136" src="res/icon/ios/splash_1_ios.png" width="640" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="orientation" value="portrait" />
