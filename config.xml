@@ -10,6 +10,8 @@
 	<icon src="res/icon.png" />
 
 	<icon src="www/res/icon.png" />
+	<preference name='phonegap-version' value='cli-7.0.1' />
+<preference name='pgb-builder-version' value='1' />
 	<platform name="ios">
 		<icon src="www/res/ios/icon-57-2x.png" width="114" height="114" />
 		<icon src="www/res/ios/icon-72-2x.png" width="144" height="144" />
