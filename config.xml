@@ -9,8 +9,6 @@
 	</author>
     <preference name="phonegap-version" value="cli-7.0.1" />
     <icon src="res/icon.png" />
-
-    <icon src="www/res/icon.png" />
   <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
   <preference name="auto-hide-splash-screen" value="true" /> 
   <content src="index.html"/>	

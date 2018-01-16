@@ -8,7 +8,6 @@
 		PhoneGap Team
 	</author>
     <icon src="res/icon.png" />
-    <icon src="www/res/icon.png" />
     <content src="index.html" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
