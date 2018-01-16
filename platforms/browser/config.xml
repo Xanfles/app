@@ -28,6 +28,7 @@
     <preference name="pgb-builder-version" value="1" />
 =======
     <icon src="res/icon.png" />
+<<<<<<< HEAD
     <gap:icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
     <gap:icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
     <gap:icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
@@ -36,6 +37,8 @@
     <gap:splash gap:platform="ios" height="960" src="res/icon/ios/splash_2_ios.png" width="640" />
     <gap:splash gap:platform="ios" height="1136" src="res/icon/ios/splash_1_ios.png" width="640" />
 >>>>>>> parent of 640cb40... fix
+=======
+>>>>>>> parent of 6769de9... fixs
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="orientation" value="portrait" />

@@ -24,6 +24,7 @@
     <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
 =======
 	<icon src="www/res/icon.png" />
@@ -32,6 +33,8 @@
 		<icon src="www/res/ios/icon-72-2x.png" width="144" height="144" />
 		<!-- and more.. (please follow the reference)-->
 	</platform>
+=======
+>>>>>>> parent of 6769de9... fixs
 	<gap:splash src="res/icon/ios/splash_3_ios.png"         gap:platform="ios"     width="320" height="480" />
 	<gap:splash src="res/icon/ios/splash_2_ios.png"      gap:platform="ios"     width="640" height="960" />
 	<gap:splash src="res/icon/ios/splash_1_ios.png" gap:platform="ios" width="640" height="1136" />
