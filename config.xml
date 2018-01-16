@@ -1,39 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.masmargen.cl" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-	<name>SochiORL</name>
-	<description>
-		SochiORL app.
-	</description>
-	<author email="support@phonegap.com" href="http://phonegap.com">
-		PhoneGap Team
-	</author>
-	<icon src="res/icon.png" />
-	<icon src="www/res/icon.png" />
-	<preference name='phonegap-version' value='cli-7.0.1' />
-<preference name='pgb-builder-version' value='1' />
-	<platform name="ios">
-		<icon src="www/res/ios/icon-57@2x.png" width="114" height="114" />
-		<icon src="www/res/ios/icon-72@2x.png" width="144" height="144" />
-		<!-- and more.. (please follow the reference)-->
-	</platform>
-	<gap:splash src="res/icon/ios/splash_3_ios.png"         gap:platform="ios"     width="320" height="480" />
-	<gap:splash src="res/icon/ios/splash_2_ios.png"      gap:platform="ios"     width="640" height="960" />
-	<gap:splash src="res/icon/ios/splash_1_ios.png" gap:platform="ios" width="640" height="1136" />
-	<preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
-	<preference name="auto-hide-splash-screen" value="true" /> 
-	<content src="index.html"/>	
-	<preference name="orientation" value="portrait" />
-	<allow-navigation href="*" />
-	<allow-intent href="*" />
-	<access origin="*" />
-	<plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
+<widget id="com.masmargen.cl" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sochi</name>
+    <description>
+        A basic Framework7 template for PhoneGap.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <icon src="res/icon.png" />
+    <preference name='phonegap-version' value='cli-7.0.1' />
+    <preference name='pgb-builder-version' value='1' />
+    <gap:splash src="res/icon/ios/splash_3_ios.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/icon/ios/splash_2_ios.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/icon/ios/splash_1_ios.png" gap:platform="ios" width="640" height="1136" />
+    <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <preference name="auto-hide-splash-screen" value="true" /> 
+    <content src="index.html"/> 
+    <preference name="orientation" value="portrait" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <access origin="*" />
+    <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
 
-	<plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
+    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
 
-	<plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin#4324168" />
-
-
-	<!-- Ejemplo para instalar plugin desde github <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin" source="git"/>-->
-
-	
+    <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin#4324168" />
 </widget>
