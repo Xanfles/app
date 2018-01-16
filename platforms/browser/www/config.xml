@@ -2,20 +2,18 @@
 <widget id="com.masmargen.cl" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>SochiORL</name>
     <description>
-		Aplicación Móvil SochiORL
+		SochiORL app
 	</description>
     <author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
 	</author>
     <icon src="res/icon.png" />
     <icon src="www/res/icon.png" />
-    <gap:splash gap:platform="ios" height="480" src="res/icon/ios/splash_3_ios.png" width="320" />
-    <gap:splash gap:platform="ios" height="960" src="res/icon/ios/splash_2_ios.png" width="640" />
-    <gap:splash gap:platform="ios" height="1136" src="res/icon/ios/splash_1_ios.png" width="640" />
     <content src="index.html" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
+    <preference name="phonegap-version" value="cli-7.0.1" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="orientation" value="portrait" />
