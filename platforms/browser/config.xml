@@ -7,12 +7,10 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
 	</author>
-    <icon src="www/res/icon.png" />
     <content src="index.html" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
-    <preference name="phonegap-version" value="cli-7.0.1" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="orientation" value="portrait" />

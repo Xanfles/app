@@ -7,9 +7,9 @@
 	<author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
 	</author>
-    <preference name="phonegap-version" value="cli-7.0.1" />
-    <icon src="www/res/icon.png" />
-  <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <!--<preference name="phonegap-version" value="cli-7.0.1" />
+    <icon src="www/res/icon.png" />-->
+  <preference name="show-splash-screen-spinner" value="true" /> 
   <preference name="auto-hide-splash-screen" value="true" /> 
   <content src="index.html"/>	
   <preference name="orientation" value="portrait" />
