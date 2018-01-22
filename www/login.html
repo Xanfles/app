@@ -30,6 +30,14 @@
             <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <link rel="stylesheet" href="css/styles.css">
             <script type="text/javascript">
+            	document.addEventListener("deviceready", onDeviceReady, false);
+				function onDeviceReady() {
+				    document.addEventListener("backbutton", function (e) {
+				        e.preventDefault();
+				    }, false );
+				}
+            </script>
+            <script type="text/javascript">
 			   function onLoad(){
 			   	var username = localStorage.getItem('username') || 0;
 			   	if(username!==0){

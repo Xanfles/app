@@ -21,6 +21,14 @@
             <meta http-equiv="refresh" content="3;login.html" />
             <!-- Your app title -->
             <title>OIRL-APP</title>
+            <script type="text/javascript">
+                document.addEventListener("deviceready", onDeviceReady, false);
+                function onDeviceReady() {
+                    document.addEventListener("backbutton", function (e) {
+                        e.preventDefault();
+                    }, false );
+                }
+            </script>
 
     <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html

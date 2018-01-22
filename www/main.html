@@ -24,8 +24,16 @@
             <title>OIRL-APP</title>
             <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <script type="text/javascript">
+                document.addEventListener("deviceready", onDeviceReady, false);
+                function onDeviceReady() {
+                    document.addEventListener("backbutton", function (e) {
+                        e.preventDefault();
+                    }, false );
+                }
+            </script>
+            <script type="text/javascript">
                 function showConfirm(){
-                    alert("saliendo");
+                    window.plugins.toast.showShortCenter('Saliendo de la app...', function(a){console.log('toast success: ' + a)});
                     navigator.app.exitApp();
                 }
             </script>
