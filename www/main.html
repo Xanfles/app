@@ -25,20 +25,9 @@
             <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <script type="text/javascript">
                 function showConfirm(){
-                    alert("Estoy en el boton");
-                    navigator.notification.confirm(
-                        '¿Estás seguro de salir?',  // message
-                        exitFromApp(),              // callback to invoke with index of button pressed
-                        'Salir',            // title
-                        'Cancelar,OK'         // buttonLabels
-                        );
+                    alert("saliendo");
+                    navigator.app.exitApp();
                 }
-
-                function exitFromApp(buttonIndex) {
-                  if (buttonIndex==2){
-                   navigator.app.exitApp();
-
-               }
            }
        </script>
 
