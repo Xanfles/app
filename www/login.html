@@ -32,12 +32,8 @@
             <script type="text/javascript">
 			   function onLoad(){
 			   	var username = localStorage.getItem('username') || 0;
-			   	alert(username);
 			   	if(username!==0){
 			   		window.location.replace("main.html");
-			   		alert("Hay un usuario" + username);
-			   	}else{
-			   		alert("No hay guardado" + username);
 			   	}
 			   }
 			   window.onload = onLoad();
