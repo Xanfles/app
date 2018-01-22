@@ -30,9 +30,9 @@
             <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <link rel="stylesheet" href="css/styles.css">
             <script type="text/javascript">
-			   // Load input value from localStorage
 			   function onLoad(){
 			   	var username = localStorage.getItem('uName') || '<empty>';
+			   	alert(username);
 			   	if(username.length()>0){
 			   		window.location.replace("main.html");
 			   		alert("Hay un usuario" + username);
