@@ -31,9 +31,9 @@
             <link rel="stylesheet" href="css/styles.css">
             <script type="text/javascript">
 			   function onLoad(){
-			   	var username = localStorage.getItem('username') || 'empty';
+			   	var username = localStorage.getItem('username') || 0;
 			   	alert(username);
-			   	if(username.length()!=='empty'){
+			   	if(username!==0){
 			   		window.location.replace("main.html");
 			   		alert("Hay un usuario" + username);
 			   	}else{
