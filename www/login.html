@@ -33,7 +33,7 @@
 			   // Load input value from localStorage
 			   function onLoad(){
 			   	var username = localStorage.getItem('uName') || '<empty>';
-			   	if($('#uName').val(username) !== ""){
+			   	if(isEmpty($('#uName').val(username))||isBlank($('#uName').val(username))){
 			   		window.location.replace("main.html");
 			   		alert("Hay un usuario");
 			   	}else{
