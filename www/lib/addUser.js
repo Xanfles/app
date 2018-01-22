@@ -7,52 +7,6 @@ function sendData(){
 		e.preventDefault();
 	}).validate({
 		debug: false,
-		rules: {
-			"txtNombre": {
-				required: true
-			},
-			"txtApellido": {
-				required: true
-			},
-			"txtRut": {
-				required: true
-			},
-			"txtPass": {
-				required: true
-			},
-			"txtRpass": {
-				required: true
-			},
-			"txtFono": {
-				required: true
-			},
-			"txtMail": {
-				required: true
-			}
-		},
-		messages: {
-			"txtNombre": {
-				required: "*"
-			},
-			"txtApellido": {
-				required: "*"
-			},
-			"txtRut": {
-				required: "*"
-			},
-			"txtPass": {
-				required: "*"
-			},
-			"txtRpass": {
-				required: "*"
-			},
-			"txtFono": {
-				required: "*"
-			},
-			"txtMail": {
-				required: "*"
-			}
-		},
 		submitHandler: function(form) {
 			alert('entrando');
 			window.plugins.toast.showShortCenter('Holi', function(a){console.log('toast error: ' + a)});
