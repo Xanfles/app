@@ -25,6 +25,7 @@ function sendData(){
     },
     submitHandler: function(form) {
       dataString = "user="+$('#txtUsuario').val()+"&pass="+$('#txtClave').val();
+      var username = $('#txtUsuario').val();
       //alert(dataString);
       $.ajax({
         url: "http://ws.masmargen.cl/login.php",
@@ -34,7 +35,8 @@ function sendData(){
           //alert(data);
           data = jQuery.parseJSON(data);
           if(data == '1'){
-          	window.plugins.toast.showShortCenter('Bienvenido Doctor', function(a){console.log('toast success: ' + a)});
+            localStorage.setItem("username", username);
+            window.plugins.toast.showShortCenter('Bienvenido Doctor', function(a){console.log('toast success: ' + a)});
             setTimeout(function(){
               window.location.replace("main.html");
             }, 2000);
@@ -48,7 +50,7 @@ function sendData(){
         }
       });
     }
-    });
+  });
 }
 
 toastr.options = {
