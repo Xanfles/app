@@ -40,7 +40,7 @@ function sendData(){
             setTimeout(function(){
               window.location.replace("main.html");
             }, 2000);
-          }else if (data == ''){
+          }else{
           	window.plugins.toast.showShortCenter('Contraseña o Usuario Invalidos', function(a){console.log('toast error: ' + a)});
             toastr.error(data[0].message);
           }
