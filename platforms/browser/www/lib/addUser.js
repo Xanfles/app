@@ -3,6 +3,7 @@ $(document).ready(function(){
 });
 
 function sendData(){
+	alert("Entrando");
 	$('#addForm').submit(function(e) {
 		e.preventDefault();
 	}).validate({
@@ -54,12 +55,14 @@ function sendData(){
 			}
 		},
 		submitHandler: function(form) {
+			alert("Funcion");
 			//window.plugins.toast.showShortCenter('Holi', function(a){console.log('toast error: ' + a)});
 			compare1 = $('#txtPass').val();
 			compare2 = $('#txtRpass').val();
 			if (compare1 === compare2) {
 				dataString = "nombre="+$('#txtNombre').val()+"&apellido="+$('#txtApellido').val()+"&pass="+$('#txtPass').val()+"&rut="+$('#txtRut').val()+"&fono="+$('#txtFono').val()+"&mail="+$('#txtMail').val()+"&user="+$('#txtRut').val();
 		      	//alert(dataString);
+		      	alert("Enviando");
 		      	$.ajax({
 		      		url: "http://ws.masmargen.cl/agregar_usuario.php",
 		      		data: dataString,
