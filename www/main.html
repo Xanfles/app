@@ -34,7 +34,9 @@
             <script type="text/javascript">
                 function showConfirm(){
                     window.plugins.toast.showShortCenter('Saliendo de la app...', function(a){console.log('toast success: ' + a)});
-                    navigator.app.exitApp();
+                    setTimeout(function(){
+                        navigator.app.exitApp();
+                    }, 500); 
                 }
             </script>
 
