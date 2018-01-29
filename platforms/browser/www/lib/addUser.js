@@ -22,7 +22,7 @@ function sendData(){
 			          	alert("creado");
 			          	window.plugins.toast.showShortCenter('Usuario Agregado', function(a){console.log('toast success: ' + a)});
 			          	setTimeout(function(){
-			          		window.location.replace("login.html");
+			          		window.location.replace("medio.html");
 			          	}, 2000);
 			          }else if (data == "1"){
 			          	alert("1");
