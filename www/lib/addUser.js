@@ -8,14 +8,55 @@ function sendData(){
 		e.preventDefault();
 	}).validate({
 		debug: false,
+		rules: {
+			"txtNombre": {
+				required: true
+			},
+			"txtApellido": {
+				required: true
+			},
+			"txtPass": {
+				required: true
+			},
+			"txtRut": {
+				required: true
+			},
+			"txtFono": {
+				required: true
+			},
+			"txtMail": {
+				required: true
+			}
+		},
+		messages: {
+			"txtNombre": {
+				required: "*"
+			},
+			"txtApellido": {
+				required: "*"
+			},
+			"txtPass": {
+				required: "*"
+			},
+			"txtRut": {
+				required: "*"
+			},
+			"txtFono": {
+				required: "*"
+			},
+			"txtMail": {
+				required: "*"
+			}
+		},
 		submitHandler: function(form) {
-			dataString = "nombre="+$('#txtNombre').val()+"&apellido="+$('#txtApellido').val()+"&pass="+$('#txtPass').val()+"&rut="+$('#txtRut').val()+"&fono="+$('#txtFono').val()+"&mail="+$('#txtMail').val()+"&user="+$('#txtRut').val();
-			alert("Enviando");
-			$.ajax({
-				url: "http://ws.masmargen.cl/agregar_usuario.php",
-				data: dataString,
-				type: "post",
-				success: function(data){
+			if($('#txtPass').val()===$('#txtRpass').val()){
+				dataString = "nombre="+$('#txtNombre').val()+"&apellido="+$('#txtApellido').val()+"&pass="+$('#txtPass').val()+"&rut="+$('#txtRut').val()+"&fono="+$('#txtFono').val()+"&mail="+$('#txtMail').val()+"&user="+$('#txtRut').val();
+				alert("Enviando");
+				$.ajax({
+					url: "http://ws.masmargen.cl/agregar_usuario.php",
+					data: dataString,
+					type: "post",
+					success: function(data){
 			          //alert(data);
 			          data = jQuery.parseJSON(data);
 			          if(data == "3"){
@@ -34,12 +75,16 @@ function sendData(){
 			          	alert("nada");
 			          	window.plugins.toast.showShortCenter('Problemas al agregar usuario', function(a){console.log('toast error: ' + a)});
 			          }
-			    },
-			    error: function(data){
+			      },
+			      error: function(data){
 			      	alert("error");
 			      	toastr.error(data);
-			    }
-			});
+			      }
+			  });
+			}else{
+				alert("nada");
+				window.plugins.toast.showShortCenter('Las contraseñas deben coincidir', function(a){console.log('toast error: ' + a)});
+			}	
 		}
 	});
 }
