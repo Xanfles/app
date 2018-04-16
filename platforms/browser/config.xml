@@ -1,60 +1,34 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.masmargen.cl" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.masmargen.cl" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>SochiORL</name>
     <description>
-        SochiORL app
-    </description>
+		SochiORL app
+	</description>
     <author email="jgonzalez@masmargen.cl" href="http://masmargen.cl">
-        Masmargen Team
-    </author>
-  <!--<preference name="phonegap-version" value="cli-7.0.1" />
-  <icon src="www/res/icon.png" />-->
-  <preference name="show-splash-screen-spinner" value="true" /> 
-  <preference name="auto-hide-splash-screen" value="true" /> 
-  <content src="index.html"/>   
-  <preference name="orientation" value="portrait" />
-  <allow-navigation href="*" />
-  <allow-intent href="*" />
-  <access origin="*" />
-
-  
-
-  <platform name="android">
-    <icon src="res/android/ldpi.png" density="ldpi" />
-    <icon src="res/android/mdpi.png" density="mdpi" />
-    <icon src="res/android/hdpi.png" density="hdpi" />
-    <icon src="res/android/xhdpi.png" density="xhdpi" />
-  </platform>
-
-
-  <platform name="ios">
-    <icon src="res/icon/ios/icon.png" platform="ios" width="57" height="57" />
-    <icon src="res/icon/ios/icon@2x.png" platform="ios" width="114" height="114" />
-    <icon src="res/icon/ios/icon-40.png" platform="ios" width="40" height="40" />
-    <icon src="res/icon/ios/icon-40@2x.png" platform="ios" width="80" height="80" />
-    <icon src="res/icon/ios/icon-50.png" platform="ios" width="50" height="50" />
-    <icon src="res/icon/ios/icon-50@2x.png" platform="ios" width="100" height="100" />
-    <icon src="res/icon/ios/icon-60.png" platform="ios" width="60" height="60" />
-    <icon src="res/icon/ios/icon-60@2x.png" platform="ios" width="120" height="120" />
-    <icon src="res/icon/ios/icon-60@3x.png" platform="ios" width="180" height="180" />
-    <icon src="res/icon/ios/icon-72.png" platform="ios" width="72" height="72" />
-    <icon src="res/icon/ios/icon-72@2x.png" platform="ios" width="144" height="144" />
-    <icon src="res/icon/ios/icon-76.png" platform="ios" width="76" height="76" />
-    <icon src="res/icon/ios/icon-76@2x.png" platform="ios" width="152" height="152" />
-    <icon src="res/icon/ios/icon-small.png" platform="ios" width="29" height="29" />
-    <icon src="res/icon/ios/icon-small@2x.png" platform="ios" width="58" height="58" />
-    <icon src="res/icon/ios/icon-small@3x.png" platform="ios" width="87" height="87" />
-  </platform>
-
-
-  
-
-
-  <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
-
-  <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
-
-  <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin#4324168" />
-
-  <!-- Ejemplo para instalar plugin desde github <plugin spec="https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin" source="git"/>-->
+		Masmargen Team
+	</author>
+    <content src="index.html" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <access origin="*" />
+    <icon gap:platform="ios" height="180" src="res/ios/icon-60@3x.png" width="180" />
+    <icon gap:platform="ios" height="60" src="res/ios/icon-60.png" width="60" />
+    <icon gap:platform="ios" height="120" src="res/ios/icon-60@2x.png" width="120" />
+    <icon gap:platform="ios" height="76" src="res/ios/icon-76.png" width="76" />
+    <icon gap:platform="ios" height="152" src="res/ios/icon-76@2x.png" width="152" />
+    <icon gap:platform="ios" height="40" src="res/ios/icon-40.png" width="40" />
+    <icon gap:platform="ios" height="80" src="res/ios/icon-40@2x.png" width="80" />
+    <icon gap:platform="ios" height="57" src="res/ios/icon.png" width="57" />
+    <icon gap:platform="ios" height="114" src="res/ios/icon@2x.png" width="114" />
+    <icon gap:platform="ios" height="72" src="res/ios/icon-72.png" width="72" />
+    <icon gap:platform="ios" height="144" src="res/ios/icon-72@2x.png" width="144" />
+    <icon gap:platform="ios" height="167" src="res/ios/icon-167.png" width="167" />
+    <icon gap:platform="ios" height="29" src="res/ios/icon-small.png" width="29" />
+    <icon gap:platform="ios" height="58" src="res/ios/icon-small@2x.png" width="58" />
+    <icon gap:platform="ios" height="50" src="res/ios/icon-50.png" width="50" />
+    <icon gap:platform="ios" height="100" src="res/ios/icon-50@2x.png" width="100" />
+    <icon gap:platform="ios" height="167" src="res/ios/icon-83.5@2x.png" width="167" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="orientation" value="portrait" />
 </widget>
