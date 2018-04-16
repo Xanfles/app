@@ -11,43 +11,6 @@
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <access origin="*" />
-    <icon density="ldpi" platform="android" src="drawable-ldpi-icon.png" />
-    <icon density="mdpi" platform="android" src="drawable-mdpi-icon.png" />
-    <icon density="hdpi" platform="android" src="drawable-hdpi-icon.png" />
-    <icon density="xhdpi" platform="android" src="drawable-xhdpi-icon.png" />
-    <icon density="xxhdpi" platform="android" src="drawable-xxhdpi-icon.png" />
-    <icon density="xxxhdpi" platform="android" src="drawable-xxxhdpi-icon.png" />
-    <splash density="land-ldpi" platform="android" src="drawable-land-ldpi-screen.png" />
-    <splash density="land-mdpi" platform="android" src="drawable-land-mdpi-screen.png" />
-    <splash density="land-hdpi" platform="android" src="drawable-land-hdpi-screen.png" />
-    <splash density="land-xhdpi" platform="android" src="drawable-land-xhdpi-screen.png" />
-    <splash density="land-xxhdpi" platform="android" src="drawable-land-xxhdpi-screen.png" />
-    <splash density="land-xxxhdpi" platform="android" src="drawable-land-xxxhdpi-screen.png" />
-    <splash density="port-ldpi" platform="android" src="drawable-port-ldpi-screen.png" />
-    <splash density="port-mdpi" platform="android" src="drawable-port-mdpi-screen.png" />
-    <splash density="port-hdpi" platform="android" src="drawable-port-hdpi-screen.png" />
-    <splash density="port-xhdpi" platform="android" src="drawable-port-xhdpi-screen.png" />
-    <splash density="port-xxhdpi" platform="android" src="drawable-port-xxhdpi-screen.png" />
-    <splash density="port-xxxhdpi" platform="android" src="drawable-port-xxxhdpi-screen.png" />
-    <icon height="57" platform="ios" src="icon.png" width="57" />
-    <icon height="114" platform="ios" src="icon@2x.png" width="114" />
-    <icon height="40" platform="ios" src="icon-40.png" width="40" />
-    <icon height="80" platform="ios" src="icon-40@2x.png" width="80" />
-    <icon height="120" platform="ios" src="icon-40@3x.png" width="120" />
-    <icon height="50" platform="ios" src="icon-50.png" width="50" />
-    <icon height="100" platform="ios" src="icon-50@2x.png" width="100" />
-    <icon height="60" platform="ios" src="icon-60.png" width="60" />
-    <icon height="120" platform="ios" src="icon-60@2x.png" width="120" />
-    <icon height="180" platform="ios" src="icon-60@3x.png" width="180" />
-    <icon height="72" platform="ios" src="icon-72.png" width="72" />
-    <icon height="144" platform="ios" src="icon-72@2x.png" width="144" />
-    <icon height="76" platform="ios" src="icon-76.png" width="76" />
-    <icon height="152" platform="ios" src="icon-76@2x.png" width="152" />
-    <icon height="167" platform="ios" src="icon-83.5@2x.png" width="167" />
-    <icon height="29" platform="ios" src="icon-small.png" width="29" />
-    <icon height="58" platform="ios" src="icon-small@2x.png" width="58" />
-    <icon height="87" platform="ios" src="icon-small@3x.png" width="87" />
-    <icon height="1024" platform="ios" src="icon-1024.png" width="1024" />
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="orientation" value="portrait" />
