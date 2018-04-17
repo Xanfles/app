@@ -9,11 +9,11 @@
 	</author>
   <!--<preference name="phonegap-version" value="cli-7.0.1" />
   <icon src="www/res/icon.png" />-->
-  <preference name="show-splash-screen-spinner" value="false" /> 
-  <preference name="ShowSplashScreenSpinner" value="false" />
-  <preference name="auto-hide-splash-screen" value="true" /> 
+  <preference name="show-splash-screen-spinner" value="true" /> 
+  <preference name="ShowSplashScreenSpinner" value="true" />
+  <preference name="auto-hide-splash-screen" value="false" /> 
   <preference name="SplashScreenDelay" value="0"/>
-  <preference name="FadeSplashScreenDuration" value="0"/>
+  <preference name="FadeSplashScreenDuration" value="-1"/>
   <content src="index.html"/>	
   <preference name="orientation" value="portrait" />
   <allow-navigation href="*" />
