@@ -11,6 +11,8 @@
   <icon src="www/res/icon.png" />-->
   <preference name="show-splash-screen-spinner" value="false" /> 
   <preference name="auto-hide-splash-screen" value="true" /> 
+  <preference name="SplashScreenDelay" value="0"/>
+  <preference name="FadeSplashScreenDuration" value="0"/>
   <content src="index.html"/>	
   <preference name="orientation" value="portrait" />
   <allow-navigation href="*" />

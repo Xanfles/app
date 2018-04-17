@@ -30,5 +30,7 @@
     <icon gap:platform="ios" height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="FadeSplashScreenDuration" value="0" />
     <preference name="orientation" value="portrait" />
 </widget>
