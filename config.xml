@@ -37,19 +37,19 @@
   <icon gap:platform="ios" height="50" src="res/icon/ios/icon-50.png" width="50" />
   <icon gap:platform="ios" height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
   <icon gap:platform="ios" height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" />
-  <splash gap:platform="ios" height="1136" src="res/ios/splash/Default-568h@2x~iphone.png" width="640" />
-  <splash gap:platform="ios" height="1334" src="res/ios/splash/Default-667h.png" width="750" />
-  <splash gap:platform="ios" height="2208" src="res/ios/splash/Default-736h.png" width="1242" />
-  <splash gap:platform="ios" height="1242" src="res/ios/splash/Default-Landscape-736h.png" width="2208" />
-  <splash gap:platform="ios" height="1536" src="res/ios/splash/Default-Landscape@2x~ipad.png" width="2048" />
-  <splash gap:platform="ios" height="2048" src="res/ios/splash/Default-Landscape@~ipadpro.png" width="2732" />
-  <splash gap:platform="ios" height="768" src="res/ios/splash/Default-Landscape~ipad.png" width="1024" />
-  <splash gap:platform="ios" height="2048" src="res/ios/splash/Default-Portrait@2x~ipad.png" width="1536" />
-  <splash gap:platform="ios" height="2732" src="res/ios/splash/Default-Portrait@~ipadpro.png" width="2048" />
-  <splash gap:platform="ios" height="1024" src="res/ios/splash/Default-Portrait~ipad.png" width="768" />
-  <splash gap:platform="ios" height="960" src="res/ios/splash/Default@2x~iphone.png" width="640" />
-  <splash gap:platform="ios" height="480" src="res/ios/splash/Default~iphone.png" width="320" />
-  <splash gap:platform="ios" height="2732" src="res/ios/splash/Default@2x~universal~anyany.png" width="2732" />
+  <splash gap:platform="ios" height="1136" src="res/splash/ios/Default-568h@2x~iphone.png" width="640" />
+  <splash gap:platform="ios" height="1334" src="res/splash/ios/Default-667h.png" width="750" />
+  <splash gap:platform="ios" height="2208" src="res/splash/ios/Default-736h.png" width="1242" />
+  <splash gap:platform="ios" height="1242" src="res/splash/ios/Default-Landscape-736h.png" width="2208" />
+  <splash gap:platform="ios" height="1536" src="res/splash/ios/Default-Landscape@2x~ipad.png" width="2048" />
+  <splash gap:platform="ios" height="2048" src="res/splash/ios/Default-Landscape@~ipadpro.png" width="2732" />
+  <splash gap:platform="ios" height="768" src="res/splash/ios/Default-Landscape~ipad.png" width="1024" />
+  <splash gap:platform="ios" height="2048" src="res/splash/ios/Default-Portrait@2x~ipad.png" width="1536" />
+  <splash gap:platform="ios" height="2732" src="res/splash/ios/Default-Portrait@~ipadpro.png" width="2048" />
+  <splash gap:platform="ios" height="1024" src="res/splash/ios/Default-Portrait~ipad.png" width="768" />
+  <splash gap:platform="ios" height="960" src="res/splash/ios/Default@2x~iphone.png" width="640" />
+  <splash gap:platform="ios" height="480" src="res/splash/ios/Default~iphone.png" width="320" />
+  <splash gap:platform="ios" height="2732" src="res/splash/ios/Default@2x~universal~anyany.png" width="2732" />
 
 
   
