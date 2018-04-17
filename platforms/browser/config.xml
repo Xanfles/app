@@ -13,6 +13,24 @@
     <allow-intent href="*" />
     <access origin="*" />
     <splash src="res/splash.png" />
+    <icon density="ldpi" gap:platform="android" src="res/icon/android/drawable-ldpi-icon.png" />
+    <icon density="mdpi" gap:platform="android" src="res/icon/android/drawable-mdpi-icon.png" />
+    <icon density="hdpi" gap:platform="android" src="res/icon/android/drawable-hdpi-icon.png" />
+    <icon density="xhdpi" gap:platform="android" src="res/icon/android/drawable-xhdpi-icon.png" />
+    <icon density="xxhdpi" gap:platform="android" src="res/icon/android/drawable-xxhdpi-icon.png" />
+    <icon density="xxxhdpi" gap:platform="android" src="res/icon/android/drawable-xxxhdpi-icon.png" />
+    <splash density="land-ldpi" gap:platform="android" src="res/splash/android/drawable-land-ldpi-screen.png" />
+    <splash density="land-mdpi" gap:platform="android" src="res/splash/android/drawable-land-mdpi-screen.png" />
+    <splash density="land-hdpi" gap:platform="android" src="res/splash/android/drawable-land-hdpi-screen.png" />
+    <splash density="land-xhdpi" gap:platform="android" src="res/splash/android/drawable-land-xhdpi-screen.png" />
+    <splash density="land-xxhdpi" gap:platform="android" src="res/splash/android/drawable-land-xxhdpi-screen.png" />
+    <splash density="land-xxxhdpi" gap:platform="android" src="res/splash/android/drawable-land-xxxhdpi-screen.png" />
+    <splash density="port-ldpi" gap:platform="android" src="res/splash/android/drawable-port-ldpi-screen.png" />
+    <splash density="port-mdpi" gap:platform="android" src="res/splash/android/drawable-port-mdpi-screen.png" />
+    <splash density="port-hdpi" gap:platform="android" src="res/splash/android/drawable-port-hdpi-screen.png" />
+    <splash density="port-xhdpi" gap:platform="android" src="res/splash/android/drawable-port-xhdpi-screen.png" />
+    <splash density="port-xxhdpi" gap:platform="android" src="res/splash/android/drawable-port-xxhdpi-screen.png" />
+    <splash density="port-xxxhdpi" gap:platform="android" src="res/splash/android/drawable-port-xxxhdpi-screen.png" />
     <icon gap:platform="ios" height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
     <icon gap:platform="ios" height="60" src="res/icon/ios/icon-60.png" width="60" />
     <icon gap:platform="ios" height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
@@ -30,19 +48,19 @@
     <icon gap:platform="ios" height="50" src="res/icon/ios/icon-50.png" width="50" />
     <icon gap:platform="ios" height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
     <icon gap:platform="ios" height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" />
-    <splash gap:platform="ios" height="1136" src="res/ios/splash/Default-568h@2x~iphone.png" width="640" />
-    <splash gap:platform="ios" height="1334" src="res/ios/splash/Default-667h.png" width="750" />
-    <splash gap:platform="ios" height="2208" src="res/ios/splash/Default-736h.png" width="1242" />
-    <splash gap:platform="ios" height="1242" src="res/ios/splash/Default-Landscape-736h.png" width="2208" />
-    <splash gap:platform="ios" height="1536" src="res/ios/splash/Default-Landscape@2x~ipad.png" width="2048" />
-    <splash gap:platform="ios" height="2048" src="res/ios/splash/Default-Landscape@~ipadpro.png" width="2732" />
-    <splash gap:platform="ios" height="768" src="res/ios/splash/Default-Landscape~ipad.png" width="1024" />
-    <splash gap:platform="ios" height="2048" src="res/ios/splash/Default-Portrait@2x~ipad.png" width="1536" />
-    <splash gap:platform="ios" height="2732" src="res/ios/splash/Default-Portrait@~ipadpro.png" width="2048" />
-    <splash gap:platform="ios" height="1024" src="res/ios/splash/Default-Portrait~ipad.png" width="768" />
-    <splash gap:platform="ios" height="960" src="res/ios/splash/Default@2x~iphone.png" width="640" />
-    <splash gap:platform="ios" height="480" src="res/ios/splash/Default~iphone.png" width="320" />
-    <splash gap:platform="ios" height="2732" src="res/ios/splash/Default@2x~universal~anyany.png" width="2732" />
+    <splash gap:platform="ios" height="1136" src="res/splash/ios/Default-568h@2x~iphone.png" width="640" />
+    <splash gap:platform="ios" height="1334" src="res/splash/ios/Default-667h.png" width="750" />
+    <splash gap:platform="ios" height="2208" src="res/splash/ios/Default-736h.png" width="1242" />
+    <splash gap:platform="ios" height="1242" src="res/splash/ios/Default-Landscape-736h.png" width="2208" />
+    <splash gap:platform="ios" height="1536" src="res/splash/ios/Default-Landscape@2x~ipad.png" width="2048" />
+    <splash gap:platform="ios" height="2048" src="res/splash/ios/Default-Landscape@~ipadpro.png" width="2732" />
+    <splash gap:platform="ios" height="768" src="res/splash/ios/Default-Landscape~ipad.png" width="1024" />
+    <splash gap:platform="ios" height="2048" src="res/splash/ios/Default-Portrait@2x~ipad.png" width="1536" />
+    <splash gap:platform="ios" height="2732" src="res/splash/ios/Default-Portrait@~ipadpro.png" width="2048" />
+    <splash gap:platform="ios" height="1024" src="res/splash/ios/Default-Portrait~ipad.png" width="768" />
+    <splash gap:platform="ios" height="960" src="res/splash/ios/Default@2x~iphone.png" width="640" />
+    <splash gap:platform="ios" height="480" src="res/splash/ios/Default~iphone.png" width="320" />
+    <splash gap:platform="ios" height="2732" src="res/splash/ios/Default@2x~universal~anyany.png" width="2732" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="orientation" value="portrait" />
