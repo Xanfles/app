@@ -9,7 +9,7 @@
 	</author>
   <!--<preference name="phonegap-version" value="cli-7.0.1" />
   <icon src="www/res/icon.png" />-->
-  <preference name="show-splash-screen-spinner" value="true" /> 
+  <preference name="show-splash-screen-spinner" value="false" /> 
   <preference name="auto-hide-splash-screen" value="true" /> 
   <content src="index.html"/>	
   <preference name="orientation" value="portrait" />

@@ -1,0 +1,80 @@
+                        </section>
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+    -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content" style="background-color: #6ea6b5;">
+                    	<div class="content-block">
+                            <center>
+                                <img src="images/orlLogo_blanco.png" style="max-width: 90%; margin-top: -3rem">
+                            </center>
+                        </div>
+                        <h2 style="color: #fff; text-align: center;">DIARIO El PAÍS</h2>
+                        <div class="content-block">
+                            <center>
+                                <img src="images/pabellon.png" style="max-width: 70%; margin-top: 1rem">
+                            </center>
+                        </div>
+                        <div class="content-block">
+                            <p style="color: #fff"><b>El Trueta extirpa de forma pionera una laringe por la boca</b></p>
+                            <p style="color: #fff">A Flora, una vecina de Lloret de Mar de 59 años, le ha cambiado la vida. Después de un año y medio alimentándose a través de una sonda, volverá a comer con normalidad en los próximos días. La mujer se sometió hace unos días en el hospital Josep Trueta de Girona a una extirpación de laringe por vía bucal, una operación pionera en Cataluña y que sólo se ha realizado tres veces más en el mundo (en concreto, en los hospitales madrileños de Coslada y Móstoles). La intervención, menos invasiva que la laringectomía usual, ha facilitado la recuperación de la paciente que, en pocos meses y tras una nueva operación, también podrá volver a hablar.<br>La mujer había sufrido un cáncer años atrás y el tratamiento de radioterapia le dejó la laringe anquilosada y sin funcionalidad. La familia pensaba que nunca más podría volver a comer por la boca. “Estamos muy contentos porque ya habíamos perdido la esperanza de que volviese a comer nunca más”, recuerda su marido, Inocente Muñoz.<br>Sin embargo, un equipo de médicos del Trueta ha obrado el milagro a través de un innovador abordaje asistido por tecnología 3D y con la ayuda de unos bisturís de última generación. La extirpación de la laringe se hizo el pasado 3 de febrero con una cirugía ultrasónica vehiculada por un control endoscópico en 3D y bisturís específicos que minimizan el sangrado de la paciente. Con esta técnica, además de evitar la cirugía abierta y facilitar la cicatrización, los médicos cerraron la herida con un procedimiento innovador —un utensilio en forma de grapa— que sustituye la suturación clásica.</p>
+                        </div>
+                        <hr>
+                        <section style="padding: 0 70px 8px;"">
+                            <a href="noticias.html">
+                                <input class="input" id="rcorners1" type="button" value="VOLVER" style="color: #14706b; height:40px;clear: both;" />
+                            </a>
+                        </section>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <script type="text/javascript" src="cordova.js"></script>
+ <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+ <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
