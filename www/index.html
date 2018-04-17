@@ -18,9 +18,11 @@
             <meta name="apple-mobile-web-app-status-bar-style" content="black">
             <meta name="format-detection" content="telephone=no">
             <meta name="msapplication-tap-highlight" content="no">
-            <meta http-equiv="refresh" content="5;main.html" />
+
+
             <!-- Your app title -->
             <title>OIRL-APP</title>
+            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <script type="text/javascript">
                 document.addEventListener("deviceready", onDeviceReady, false);
                 function onDeviceReady() {
@@ -29,49 +31,108 @@
                     }, false );
                 }
             </script>
+            <script type="text/javascript">
+                function showConfirm(){
+                    window.plugins.toast.showShortCenter('Saliendo de la app...', function(a){console.log('toast success: ' + a)});
+                    setTimeout(function(){
+                        navigator.app.exitApp();
+                    }, 500); 
+                }
+            </script>
 
-    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
-        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
-    -->
+            <link href="lib/framework7/css/framework7.ios.min.css" rel="stylesheet">
+            <link href="lib/framework7/css/framework7.ios.colors.min.css" rel="stylesheet">
+            <!--Font Awesome-->
+            <link href="path/to/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+            <link href="css/styles.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
-    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
-
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-    <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-    <!-- Views -->
-    <div class="views">
-        <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
-            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <div class="pages navbar-through toolbar-through">
-                <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
-                    <!-- Scrollable page content -->
-                    <div class="page-content">
-                        <div class="content-block">
-                        	<center>
-                        		<img src="images/orlLogo.png" style="max-width: 70%; padding-top: 50%">
-                        	</center>
+    </head>
+    <body>
+        <!-- Status bar overlay for full screen mode (PhoneGap) -->
+        <div class="statusbar-overlay">
+        </div>
+        <!-- Views -->
+        <div class="views">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+                <div class="pages navbar-through toolbar-through">
+                    <!-- Page, "data-page" contains page name -->
+                    <div class="page" data-page="index">
+                        <!-- Scrollable page content -->
+                        <div class="page-content" style="background-image:url(images/fondo2.jpg)">
+                            <div class="content-block">
+                                <center>
+                                    <img src="images/orlLogo.png" style="max-width: 70%; margin-top: -3rem"/>
+                                </center>
+                            </div>
+                            <div class="columnas centered" style="margin-top: -1rem">
+                                <!--rem    revisar para medida para proporción-->
+                                <a href="countryCongress.html" style="color:#00007F">
+                                    <img src="images/congresos.png" style="max-width: 90px;">
+                                    Congresos
+                                    </img>
+                                </a>
+                                <a href="formacion.html" style="color:#00007F">
+                                    <img src="images/centros.png" style="max-width: 90px;">
+                                    Formación
+                                    </img>
+                                </a>
+                            </div>
                         </div>
+                        <div class="columnas centered" style="margin-top: 2rem">
+                            <!--rem    revisar para medida para proporción-->
+                            <a href="papers.html" style="color:#00007F">
+                                <img src="images/revista.png" style="max-width: 100px;">
+                                Revista
+                                </img>
+                            </a>
+                            <a href="noticias.html" style="color:#00007F">
+                                <img src="images/noticias.png" style="max-width: 85px;margin-top: 1.5em;">
+                                Noticias
+                                </img>
+                            </a>
+                        </div>
+                        <div class="columnas centered" style="margin-top: 2rem">
+                            <!--rem    revisar para medida para proporción-->
+                            <a  data-rel="external" onclick="window.open('http://www.sochiorl.cl/solicita.php', '_system');" style="color:#00007F">
+                                <img src="images/teacher.png" style="max-width: 90px;">
+                                Cursos
+                                </img>
+                            </a>
+                            <a  data-rel="external" onclick="window.open('http://sochiorl.foroactivo.com/login', '_system');" style="color:#00007F">
+                                <img src="images/foro.png" style="max-width: 90px;">
+                                <br>
+                                Foro
+                                    </br>
+                                </img>
+                            </a>
+                        </div>
+                        <section style="padding: 0 70px 9px; margin-top: 1em;">
+                            <center>
+                                <a onclick="showConfirm()">
+                                    <input class="input" id="rcorners1" style="color: #fff; height:40px;background-color: rgba(255,37,0,0.8);width: 70px;" type="button" value="Salir"/>
+                                </a>
+                            </center>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-    	<center>
-    		<p>MasMargen @ 2017</p>
-    	</center>
-    </div>
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-</body>
-
+        <script type="text/javascript">
+            document.addEventListener("deviceready", onDeviceReady, false);
+            function onDeviceReady() {
+                window.open = cordova.InAppBrowser.open;
+            }
+        </script>
+        <script src="cordova.js" type="text/javascript">
+        </script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="lib/framework7/js/framework7.min.js" type="text/javascript">
+        </script>
+        <script src="js/my-app.js" type="text/javascript">
+        </script>
+    </body>
 </html>

@@ -28,10 +28,8 @@
     <icon gap:platform="ios" height="50" src="res/icon/ios/icon-50.png" width="50" />
     <icon gap:platform="ios" height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
     <icon gap:platform="ios" height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="auto-hide-splash-screen" value="false" />
-    <preference name="SplashScreenDelay" value="0" />
-    <preference name="FadeSplashScreenDuration" value="-1" />
     <preference name="orientation" value="portrait" />
 </widget>

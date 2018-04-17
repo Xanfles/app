@@ -9,11 +9,9 @@
 	</author>
   <!--<preference name="phonegap-version" value="cli-7.0.1" />
   <icon src="www/res/icon.png" />-->
-  <preference name="show-splash-screen-spinner" value="true" /> 
-  <preference name="ShowSplashScreenSpinner" value="true" />
-  <preference name="auto-hide-splash-screen" value="false" /> 
-  <preference name="SplashScreenDelay" value="0"/>
-  <preference name="FadeSplashScreenDuration" value="-1"/>
+  <preference name="show-splash-screen-spinner" value="false" /> 
+  <preference name="ShowSplashScreenSpinner" value="false" />
+  <preference name="auto-hide-splash-screen" value="false" />
   <content src="index.html"/>	
   <preference name="orientation" value="portrait" />
   <allow-navigation href="*" />
@@ -43,6 +41,8 @@
 
 
   <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
+
+  <plugin spec="https://github.com/FRD49/iOS-ExitApp" source="git"/>
 
   <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
 
