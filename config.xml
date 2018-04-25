@@ -78,7 +78,7 @@
 
   <plugin spec="https://github.com/apache/cordova-plugin-legacy-whitelist#122d4b9" />
 
-  <!--<plugin spec="https://github.com/FRD49/iOS-ExitApp#635f50c" />-->
+  <plugin spec="https://github.com/FRD49/iOS-ExitApp#635f50c" />
 
   <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser#8e3f2f2" />
 
